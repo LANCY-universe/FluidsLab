@@ -1,0 +1,328 @@
+
+*** all basic elements *** [7]
+H O C Ca Mg Si Na
+
+######################################################
+!!! species_key !!!
+
+<H+>
+charge +1 ; size +4 ;
+composition 
+1 0 0 0 0 0 0
+
+<CO3-2>
+charge -2 ; size +4 ;
+composition
+0 3 1 0 0 0 0
+
+<Na+>
+charge +1 ; size +4 ;
+composition 
+0 0 0 0 0 0 1
+
+<Ca+2>
+charge +2 ; size +4 ;
+composition 
+0 0 0 1 0 0 0
+
+<Mg+2>
+charge +2 ; size +4 ;
+composition 
+0 0 0 0 1 0 0
+
+<H4SiO4>
+charge +0 ; size +4;
+composition
+4 4 0 0 0 1 0
+
+<H2O>
+charge 0 ; size +4 ;
+composition 
+2 1 0 0 0 0 0
+
+<Cl->
+charge -1 ; size +4 ;
+composition 
+0 0 0 0 0 0 0
+
+<SO4-2>
+charge -2 ; size +4 ;
+composition 
+0 0 0 0 0 0 0
+
+#### end_species_key ####
+
+####################################################
+!!! species_pair !!!
+
+<OH->
+charge -1 ; size +4;
+composition
+1 1 0 0 0 0 0
+reaction
+OH- -1 ; H+ -1 ; H2O +1 ;
+
+<HCO3->
+charge -1 ; size +4;
+composition
+1 3 1 0 0 0 0
+reaction
+HCO3- -1 ; H+ +1 ; CO3-2 +1 ;
+
+<H2CO3>
+charge 0 ; size +4;
+composition
+2 3 1 0 0 0 0
+reaction
+H2CO3 -1 ; H+ +1 ; HCO3- +1 ; 
+
+<CO2>
+charge 0 ; size +4;
+composition
+0 2 1 0 0 0 0
+reaction
+CO2 -1 ; H2O -1 ; H+ +1 ; HCO3- +1 ; 
+
+<NaHCO3>
+charge 0 ; size +4 ;
+composition
+1 3 1 0 0 0 1
+reaction
+NaHCO3 -1 ; HCO3- +1 ; Na+ +1 ;
+
+<NaOH>
+charge 0 ; size +4 ;
+composition
+1 1 0 0 0 0 1
+reaction
+NaOH -1 ; H+ -1 ; H2O +1 ; Na+ +1 ;
+
+<NaCO3->
+charge -1 ; size +4 ;
+composition
+0 3 1 0 0 0 1
+reaction
+NaCO3- -1 ; CO3-2 +1 ; Na+ +1 ;
+
+<MgCO3>
+charge 0 ; size +4 ;
+composition
+0 3 1 0 1 0 0
+reaction
+MgCO3 -1 ; CO3-2 +1 ; Mg+2 +1 ;
+
+<MgHCO3+>
+charge +1 ; size +4 ;
+composition
+1 3 1 0 1 0 0
+reaction
+MgHCO3+ -1 ; HCO3-2 +1 ; Mg+2 +1 ;
+
+<MgOH+>
+charge +1 ; size +4 ;
+composition
+1 1 0 0 1 0 0
+reaction
+MgOH+ -1 ; H+ -1 ; H2O +1 ; Mg+2 +1 ;
+
+<MgH3SiO4+>
+charge +1 ; size +4 ;
+composition
+3 4 0 0 1 1 0
+reaction
+MgH3SiO4+ -1 ; H+ -1 ; H4SiO4 +1 ; Mg+2 +1 ;
+
+<MgH2SiO3HCO3+>
+charge +1 ; size +4 ;
+composition
+3 6 1 0 1 1 0
+reaction
+MgH2SiO3HCO3+ -1 ; H2O -1 ; H4SiO4 +1 ; Mg+2 +1 ; HCO3- +1 ;
+
+<CaCO3>
+charge 0 ; size +4 ;
+composition
+0 3 1 1 0 0 0
+reaction
+CaCO3 -1 ; CO3-2 +1 ; Ca+2 +1 ;
+
+<CaHCO3+>
+charge +1 ; size +4;
+composition
+1 3 1 1 0 0 0
+reaction
+CaHCO3+ -1 ; HCO3- +1 ; Ca+2 +1 ;
+
+<CaOH+>
+charge +1 ; size +4 ;
+composition
+1 1 0 1 0 0 0
+reaction
+CaOH+ -1 ; H+ -1 ; H2O +1 ; Ca+2 +1 ;
+
+<CaH3SiO4+>
+charge +1 ; size +4 ;
+composition
+3 4 0 1 0 1 0
+reaction
+CaH3SiO4+ -1 ; H+ -1 ; H4SiO4 +1 ; Ca+2 +1 ;
+
+<H8Si3O10>
+charge 0 ; size +4 ;
+composition
+8 10 0 0 0 3 0
+reaction
+H8Si3O10 -1 ; H2O -2 ; H4SiO4 +3 ;
+
+<H6Si2O7>
+charge 0 ; size +4 ;
+composition
+6 7 0 0 0 2 0
+reaction
+H6Si2O7 -1 ; H2O -1 ; H4SiO4 +2 ;
+
+<H3SiO4->
+charge -1 ; size +4 ;
+composition
+3 4 0 0 0 1 0
+reaction
+H3SiO4- -1 ; H+ -1 ; H4SiO4 +1 ;
+
+<CH4>
+charge 0 ; size +4 ;
+composition
+4 0 1 0 0 1 0
+reaction
+CH4 -1 ; O2(G) -2 ; H+ +2 ; H2O +2 ; CO3-2 +1 ;
+
+<ETHANE>
+charge 0 ; size +4 ;
+composition
+6 0 2 0 0 1 0
+reaction
+ETHANE -1 ; O2(G) -3.5 ; H+ +4 ; H2O +1 ; CO3-2 +2 ;
+
+<CaCl+>
+charge +1 ; size +4 ;
+composition
+0 0 0 0 0 0 0
+reaction
+CaCl+ -1 ; Ca+2 +1 ; Cl- +1 ;
+
+<CaCl2>
+charge 0 ; size +4 ;
+composition
+0 0 0 0 0 0 0
+reaction
+CaCl2 -1 ; Ca+2 +1 ; Cl- +2 ;
+
+<MgCl+>
+charge +1 ; size +4 ;
+composition
+0 0 0 0 0 0 0
+reaction
+MgCl+ -1 ; Mg+2 +1 ; Cl- +1 ;
+
+<NaCl>
+charge 0 ; size +4 ;
+composition
+0 0 0 0 0 0 0
+reaction
+NaCl -1 ; Na+1 +1 ; Cl- +1 ;
+
+<HS->
+charge -1 ; size +4 ;
+composition
+0 0 0 0 0 0 0
+reaction
+HS- -1 ; O2(G) -2 ; H+ +1 ; SO4-2 +1 ;
+
+<CaSO4>
+charge 0 ; size +4 ;
+composition
+0 0 0 0 0 0 0
+reaction
+CaSO4 -1 ; Ca+2 +1 ; SO4-2 +1 ;
+
+<MgSO4>
+charge 0 ; size +4 ;
+composition
+0 0 0 0 0 0 0
+reaction
+MgSO4 -1 ; Mg+2 +1 ; SO4-2 +1 ;
+
+<NaSO4->
+charge -1 ; size +4 ;
+composition
+0 0 0 0 0 0 0
+reaction
+NaSO4- -1 ; Na+ +1 ; SO4-2 +1 ;
+
+<HSO4->
+charge -1 ; size +4 ;
+composition
+0 0 0 0 0 0 0
+reaction
+HSO4- -1 ; H+ +1 ; SO4-2 +1 ;
+
+#### end_species_pair ###
+
+#################################################
+!!! Minerals !!!
+
+[Aragonite]
+composition
+0 3 1 1 0 0 0
+reaction
+Calcite -1 ; CO3-2 +1 ; Ca+2 +1 ;
+
+[Calcite]
+composition
+0 3 1 1 0 0 0
+reaction
+Calcite -1 ; CO3-2 +1 ; Ca+2 +1 ;
+
+[Coesite]
+composition
+0 2 0 0 0 1 0
+reaction
+Coesite -1 ; H2O -2 ; H4SiO4 +1 ;
+
+[Dolomite]
+composition
+0 6 2 1 1 0 0
+reaction
+Dolomite -1 ; CO3-2 +2 ; Ca+2 +1 ; Mg+2 +1 ;
+
+[Graphite]
+composition
+0 0 1 0 0 0 0
+reaction
+Graphite -1 ; O2(G) -1 ; H2O -1 ; CO3-2 +1; H+ +2 ; 
+
+[Magnesite]
+composition
+0 3 1 0 1 0 0
+reaction
+Magneiste -1 ; CO3-2 +1 ; Mg+2 +1 ;
+
+[Quartz]
+composition
+0 2 0 0 0 1 0
+reaction
+Quartz -1 ; H2O -2 ; H4SiO4 +1 ;
+
+[Wollastonite]
+composition
+0 3 0 1 0 1 0
+reaction
+Wollastonite -1 ; H2O -1 ; H+ -2 ; Ca+2 +1 ; H4SiO4 +1 ;
+
+#### end_Minerals ####
+
+#################################################
+!!! Gas !!!
+
+O2(G)
+
+#### end_Gas ####
