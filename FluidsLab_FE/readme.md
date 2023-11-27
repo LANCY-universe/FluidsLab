@@ -15,7 +15,7 @@
 
   并安装***PyQt5***、***numpy***、***pandas***、***scipy***、***matplotlib***。
 
-  在命令行中输入***python useui.py***
+  在命令行中输入***python useui.py***即可使用
 
 
 # 更新日志
